@@ -9,7 +9,7 @@
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js';
 import {getFirestore,doc,collection,onSnapshot,runTransaction} from 'https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js';
-const firebaseConfig={apiKey:'REEMPLAZAR',authDomain:'REEMPLAZAR',projectId:'REEMPLAZAR',appId:'REEMPLAZAR'};
+const firebaseConfig={apiKey:'AIzaSyADen4CYdZxt-zLoJk-PGY9tz4Wk7Cl8D0',authDomain:'formula-ai-voting.firebaseapp.com',projectId:'formula-ai-voting',storageBucket:'formula-ai-voting.firebasestorage.app',messagingSenderId:'274427320166',appId:'1:274427320166:web:c87fc9e0e60580efeadaa7'};
 const teams=[{id:'gcf',name:'GCF',number:'01'},{id:'demand-generation',name:'Demand Generation',number:'02'},{id:'cvg-ventas',name:'CVG Ventas',number:'03'},{id:'o2i',name:'O2I',number:'04'},{id:'legales',name:'Legales',number:'05'},{id:'marketing',name:'Marketing',number:'06'}];
 const STORAGE_KEY='votacion-sap-equipos-2026-final';const $=id=>document.getElementById(id);let selected=null,busy=false,db=null;
 function showMessage(s,error=false){$('message').textContent=s;$('message').classList.toggle('hidden',!s);$('message').classList.toggle('error',error)}
